@@ -1,4 +1,4 @@
 
-public class ClearGround {
+public class ClearGround extends GameItem {
 
 }

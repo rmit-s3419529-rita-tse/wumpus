@@ -1,4 +1,4 @@
 
-public class Pit {
+public class Pit extends GameItem {
 
 }

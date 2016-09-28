@@ -2,8 +2,11 @@
 public class World {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		GameItem myGame = new GameItem();
+		myGame.displayBoard();
+        // instantiates myGame of CLASS Game
+		//myGame.runGame()
 	}
 
 }
