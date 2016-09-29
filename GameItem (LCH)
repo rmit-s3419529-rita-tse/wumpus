@@ -1,0 +1,69 @@
+
+import java.util.*;
+
+public class GameItem extends Game{
+	char Item;
+	int col, row = 0;
+	int count=0;
+	int countplay=0, countwumpus=0, countpit=0;
+	int countgold=0;
+	int goldnum;
+	Random ran = new Random();
+	
+	public GameItem(char c){
+	Item = c;
+	
+}
+	
+	public GameItem(){
+	
+}
+
+public void setItem(){
+	
+	GameItem player = new GameItem();
+	Gold gold = new Gold();
+	GameItem wumpus = new GameItem();
+	GameItem pit = new GameItem();
+	GameItem ground = new GameItem();
+	goldnum = ran.nextInt(3) + 1;
+	
+	while (count < board.length * board[0].length){
+		col = ran.nextInt(4) + 0;
+		row = ran.nextInt(4) +0;
+		if(board[row][col] == Character.MIN_VALUE && countgold < goldnum ){
+			board[row][col] = 'g';
+			countgold++;
+			count++;
+		}
+		else if(board[row][col] == Character.MIN_VALUE && countwumpus < 1 ){
+				board[row][col] = 'W';
+				countwumpus++;
+				count++;
+			}
+		else if(board[row][col] == Character.MIN_VALUE && countpit < 3 ){
+			board[row][col] = 'p';
+			countpit++;
+			count++;
+		}
+		else if(board[row][col] == Character.MIN_VALUE && countplay < 1 ){
+			board[row][col] = '*';
+			countplay++;
+			count++;
+		}else if(board[row][col] == Character.MIN_VALUE){
+			board[row][col] = '.';
+			count++;
+		}else{
+			continue;
+		}
+	}
+
+	for (col = 0; col < board.length ; col ++){
+		System.out.println();
+		for (row = 0; row < board[0].length ; row++){
+			System.out.print(board[row][col]);
+		}
+	}
+}
+}
+
