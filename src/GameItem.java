@@ -14,8 +14,9 @@ public class GameItem {
     	{
     		Arrays.fill(gameBoard[row], ' ');
     	}
-    }
     
+    }
+    //board
     public void displayBoard()
     {
     	for (int row = 0; row <gameBoard.length; row++){
@@ -27,9 +28,9 @@ public class GameItem {
     		System.out.print("\n-----------------------------------\n");
     	}
     	System.out.print("\n \n");
-    }
-
-    //Player moves
+ 
+}
+	//Player moves
     public boolean PlayerMove(char player, int row, int column)
     {
     	if (row >=0 && row <=3 && column >=0 && column <=3)
@@ -47,9 +48,7 @@ public class GameItem {
     
     }
     
-    
 
-    
     
     //pit
     public boolean pitPost(char pit, int row, int column)
@@ -88,11 +87,8 @@ public class GameItem {
     
     }
     
-    
-    
 }
-    	
-    	
+   	
     /*
      //constructor GameItem(char c)
 
