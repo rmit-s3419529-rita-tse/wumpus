@@ -1,0 +1,36 @@
+
+public class Game {
+	Random ran = new Random();
+	int col, row = 0;
+	char[][] board = new char[4][4];
+
+	
+	public char[][] getBoard(){
+		return board;
+	}
+	
+
+
+
+
+
+
+public void runGame() {
+	setBoard();
+	display();
+	
+}
+
+private void setBoard(){
+	GameItem a = new GameItem();
+	a.setItem();
+	
+}
+
+private void display(){
+	
+
+}
+
+}
+	
