@@ -28,8 +28,56 @@ public class GameItem {
     		System.out.print("\n-----------------------------------\n");
     	}
     	System.out.print("\n \n");
- 
 }
+
+    
+	//set items on board
+        public boolean setItem(char item, int row, int column)
+        {
+        	if (row >=0 && row <=3 && column >=0 && column <=3)
+        	{
+        	    if (gameBoard[row][column] != ' ')
+        		    return false;
+        	    else
+        	    {
+        		gameBoard[row][column] = item;
+        		    return true;
+        	     }
+        }
+        	else return false;
+        
+        }
+        
+        
+     	//random--- make it forloop ??
+        Random RCor = new Random();
+     	int row = RCor.nextInt(4);
+     	Random CCor = new Random();
+     	int column = CCor.nextInt(4);
+     	
+     	
+     public void SetGold(){
+	      	
+     	setItem('g', row, column);
+	      	}
+	  	
+	  //only wants to execute the first statement
+	  public void SetPit(){
+      	setItem('p', row, column);
+      	}
+	  
+
+	  public void SetPlayer(){
+	      	setItem('*', row, column);
+	      	}
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  //----OLD CODE, same method for each character
 	//Player moves
     public boolean PlayerMove(char player, int row, int column)
     {
@@ -47,8 +95,6 @@ public class GameItem {
     		return false;
     
     }
-    
-
     
     //pit
     public boolean pitPost(char pit, int row, int column)
@@ -86,20 +132,12 @@ public class GameItem {
     		return false;
     
     }
-    
+
+
+
 }
    	
-    /*
-     //constructor GameItem(char c)
 
-    private String[][] board;
-    public GameItem()
-    {
-    	//game item array
-    	char gameitems [] = {g, p, w, d }
-
-
-*/    
 
 
 

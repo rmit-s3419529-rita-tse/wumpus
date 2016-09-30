@@ -4,7 +4,7 @@ public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	
+	/*
 		//random
 	    Random RCor = new Random();
 		int row = RCor.nextInt(4);
@@ -14,20 +14,22 @@ public class test {
 		
 		System.out.println(column + "/"+ row);
 		
-
 		//
 		GameItem a = new GameItem();
 		Wumpus b = new Wumpus();
+		Game c = new Game();
 		
 		
 		a.displayBoard(); // empty board
-		
+    	b.wumpusPost('w', row, column);
 		
 		//fill boards
-		a.PlayerMove('*', 0, 0);
+		/*a.PlayerMove('*', 0, 0);
 		b.wumpusSet();
 		a.pitPost('p', row, column); //only executes once when initiatized
 		a.goldPost('g', 2, 2);
+		*/
+
 		a.displayBoard();
 		
 

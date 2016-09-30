@@ -3,10 +3,13 @@ public class World {
 
 	public static void main(String[] args) {
 		
-		GameItem myGame = new GameItem();
-		myGame.displayBoard();
+		Game myGame = new Game();
+		myGame.runGame();
+		
+		//myGame.displayBoard();
         // instantiates myGame of CLASS Game
-		//myGame.runGame()
+		
+	}
 	}
 
-}
+
