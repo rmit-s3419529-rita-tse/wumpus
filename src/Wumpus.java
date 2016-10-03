@@ -9,7 +9,7 @@ public class Wumpus extends GameItem {
 	int column = CCor.nextInt(4);
 
     	
-    	public boolean SetWumpus(int row, int column){
+    /*	public boolean SetWumpus(int row, int column){
     		//wrow = row;
     		//wcolumn = column;
     		
@@ -18,7 +18,7 @@ public class Wumpus extends GameItem {
     	return true;
     }
     	
-
+*/
     	
 	
 }

@@ -23,20 +23,16 @@ public class Game {
 	          
 	          GameItem T = new GameItem();
 	          Wumpus W = new Wumpus();
-	          //Gold G = new Gold();
+	          Pit P = new Pit();
+	          Gold G = new Gold();
 	          
+	          T.setItem('*', T.row, T.column);
 	          T.setItem('w', W.row, W.column); //IT WORKs!!!!!!!!!!!
-	          
-	         
-
-
-	          T.SetPit();
-	          T.SetGold();
+	          T.setItem('p', P.row, P.column);
+	          T.setItem('g', G.row, G.column);
 
 	          T.displayBoard();
-	         //T.PlayerMove('*', row, column);
-	         //T.pitPost('p', row, column);
-	         //T.goldPost('g', row, column);
+	          
 	    }
 
 	    	
