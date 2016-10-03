@@ -4,6 +4,11 @@ public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Random goldnum = new Random();
+		int golds = goldnum.nextInt(3)+1;
+		
+		System.out.println(golds);
 	/*
 		//random
 	    Random RCor = new Random();
@@ -29,9 +34,6 @@ public class test {
 		a.pitPost('p', row, column); //only executes once when initiatized
 		a.goldPost('g', 2, 2);
 		*/
-
-		a.displayBoard();
-		
 
 		
     /*
