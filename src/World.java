@@ -6,9 +6,6 @@ public class World {
 		Game myGame = new Game();
 		myGame.runGame();
 		
-		//myGame.displayBoard();
-        // instantiates myGame of CLASS Game
-		
 	}
 	}
 
